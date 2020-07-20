@@ -1,0 +1,17 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.testng:testng:7.1.0'
+    implementation 'com.codeborne:selenide:5.13.0'
+    implementation 'org.slf4j:slf4j-jdk14:2.0.0-alpha1'
+}
+
+test {
+    useTestNG {
+        suites 'src/test/recources/testng.xml'
+    }
+}

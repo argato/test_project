@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SearchSuite" verbose="1" >
+  <test name="SearchResultsCount" >
+    <classes>
+      <class name="yandex.tests.SearchTest" />
+    </classes>
+  </test>
+</suite>
